@@ -1,0 +1,40 @@
+CREATE DATABASE lab4;
+CREATE TABLE `lab4`.`department` ( `department_id` INT NOT NULL , `department_name` VARCHAR(40) NOT NULL , PRIMARY KEY (`department_id`)) ENGINE = InnoDB;
+CREATE TABLE `lab4`.`professor` ( `professor_id` INT NOT NULL , `professor_name` VARCHAR(40) NOT NULL , PRIMARY KEY (`professor_id`)) ENGINE = InnoDB;
+CREATE TABLE `lab4`.`course` ( `course_id` INT NOT NULL , `course_name` VARCHAR(40) NOT NULL , `course_description` TEXT NOT NULL , `department_id` INT NOT NULL , `professor_id` INT NOT NULL , PRIMARY KEY (`course_id`)) ENGINE = InnoDB;
+
+INSERT INTO `course`(`course_id`, `course_name`, `course_description`, `department_id`, `professor_id`) VALUES (1, "Database" , "We learn databases", 61 , 666)
+INSERT INTO `course`(`course_id`, `course_name`, `course_description`, `department_id`, `professor_id`) VALUES (2, "Analog" , "We learn analog", 51 , 555)
+INSERT INTO `course`(`course_id`, `course_name`, `course_description`, `department_id`, `professor_id`) VALUES(3, "Artificial Intelligence" , "We learn AI", 71 , 555)
+INSERT INTO `course`(`course_id`, `course_name`, `course_description`, `department_id`, `professor_id`) VALUES(4, "Human Rights" , "We learn human rights", 71 , 888)
+INSERT INTO `course`(`course_id`, `course_name`, `course_description`, `department_id`, `professor_id`) VALUES(5, "Algorithms" , "We learn human Algorithms", 91 , 777)
+INSERT INTO `course`(`course_id`, `course_name`, `course_description`, `department_id`, `professor_id`) VALUES(6, "Communication skills" , "We learn communications", 41 , 999)
+INSERT INTO `course`(`course_id`, `course_name`, `course_description`, `department_id`, `professor_id`) VALUES(7, "Digital" , "We learn digital", 51 ,777)
+INSERT INTO `course`(`course_id`, `course_name`, `course_description`, `department_id`, `professor_id`) VALUES(8, "English" , "We learn english", 61 , 888)
+INSERT INTO `course`(`course_id`, `course_name`, `course_description`, `department_id`, `professor_id`) VALUES(9, "Logic" , "We learn Logic", 71 , 666)
+INSERT INTO `course`(`course_id`, `course_name`, `course_description`, `department_id`, `professor_id`) VALUES(10, "OS" , "We learn os", 41 , 555)
+INSERT INTO `course`(`course_id`, `course_name`, `course_description`, `department_id`, `professor_id`) VALUES(11, "Signals" , "We learn Signals", 51 , 999)
+INSERT INTO `course`(`course_id`, `course_name`, `course_description`, `department_id`, `professor_id`) VALUES(12, "DSP" , "We learn DSP", 51 , 555)
+INSERT INTO `course`(`course_id`, `course_name`, `course_description`, `department_id`, `professor_id`) VALUES(13, "Chemistry" , "We learn Chemistry", 61 , 777)
+INSERT INTO `course`(`course_id`, `course_name`, `course_description`, `department_id`, `professor_id`) VALUES(14, "Software" , "We learn Software", 51 , 888)
+INSERT INTO `course`(`course_id`, `course_name`, `course_description`, `department_id`, `professor_id`) VALUES(15, "Science" , "We learn Science", 61 , 666)
+INSERT INTO `course`(`course_id`, `course_name`, `course_description`, `department_id`, `professor_id`) VALUES(16, "calculas" , "We learn calculas", 71 , 555)
+INSERT INTO `course`(`course_id`, `course_name`, `course_description`, `department_id`, `professor_id`) VALUES(17, "Physics" , "We learn Physics", 41 , 999)
+
+
+
+INSERT INTO `department`(`department_id`, `department_name`) VALUES (61,"Computer")
+INSERT INTO `department`(`department_id`, `department_name`) VALUES (51,"Communications")
+INSERT INTO `department`(`department_id`, `department_name`) VALUES (71,"Electro")
+INSERT INTO `department`(`department_id`, `department_name`) VALUES (41,"Offshore")
+INSERT INTO `department`(`department_id`, `department_name`) VALUES (91,"Construction")
+
+
+
+INSERT INTO `professor`(`professor_id`, `professor_name`) VALUES (555,"Dr.Ahmed")
+INSERT INTO `professor`(`professor_id`, `professor_name`) VALUES (666,"Dr.Khaled")
+INSERT INTO `professor`(`professor_id`, `professor_name`) VALUES (777,"Dr.Mona")
+INSERT INTO `professor`(`professor_id`, `professor_name`) VALUES (888,"Dr.Yousef")
+INSERT INTO `professor`(`professor_id`, `professor_name`) VALUES (999,"Dr.Hossam")
+
+
